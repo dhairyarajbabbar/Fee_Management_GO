@@ -7,6 +7,7 @@ import (
 )
 
 type Fee struct {
+	FeeType      string               `bson:"fee_type" json:"fee_type"`
 	Amount       float64              `bson:"amount" json:"amount"`
 	GenerateDate time.Time            `bson:"generate_date" json:"generate_date"`
 	Status       string               `bson:"status" json:"status"`           // paid/unpaid/partially_paid/upcoming
